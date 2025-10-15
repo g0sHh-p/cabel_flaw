@@ -24,19 +24,10 @@ dist/
 Thumbs.db
 
 # App data and artifacts
-data/
-data/test
 data/etln_proc/
 data/etalon_imgs/
 results.csv
 selected_reference.json
-reference_model.pkl
-test_model.pkl
-temp_*.jpg
-
-# Logs
-logs/
-*.log
 
 # Cursor/agent
 .cursor/
