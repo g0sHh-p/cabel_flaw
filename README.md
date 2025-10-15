@@ -41,7 +41,6 @@ python src/interface/console.py analyze --input data/etln_proc --output results.
 │  │  ├─ Brigh_analys.py            # признаки яркости
 │  │  ├─ char_comp.py               # контурные признаки
 │  │  ├─ texture_analys.py          # GLCM/Haralick-признаки (встроенная реализация)
-│  │  ├─ reference_model.py         # модель-эталон (статистики/пороги)
 │  │  ├─ defect_detection_model.py  # модель детекции дефектов
 │  │  ├─ select_reference.py        # выборка K разнообразных эталонов
 │  │  └─ __init__.py

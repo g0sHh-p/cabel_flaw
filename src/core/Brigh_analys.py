@@ -30,7 +30,7 @@ def analyze_histogram_peaks(image_gray: np.ndarray, min_distance: int = 10, min_
     """
     Анализ пиков гистограммы яркости.
     """
-    hist, bin_edges = np.histogram(image_gray.flatten(), bins=256, range=[0, 255])
+    hist, bin_edges = np.histogram(image_gray.flatten(), bins=256, range=[0, 256])
     peaks, properties = find_peaks(hist, distance=min_distance, height=min_height)
     return {
         'histogram': hist.tolist(),

@@ -18,8 +18,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from core import (
     create_defect_detection_model,
     load_defect_detection_model,
-    DefectDetectionModel,
-    preprocess_images
+    
 )
 
 # Настройка страницы
@@ -106,12 +105,9 @@ def display_results(results):
         return
     if results.get('has_defect'):
         st.error("🚨 **ДЕФЕКТ ОБНАРУЖЕН**")
-        confidence = results.get('defect_confidence', 0.0) * 100.0
-        st.write(f"Уверенность: {confidence:.1f}%")
     else:
         st.success("✅ **ДЕФЕКТОВ НЕТ**")
-        confidence = results.get('defect_confidence', 0.0) * 100.0
-        st.write(f"Уверенность: {confidence:.1f}%")
+        
 
 def main():
     """Основная функция приложения"""
