@@ -24,11 +24,12 @@ dist/
 Thumbs.db
 
 # App data and artifacts
+data/
+data/test
 data/etln_proc/
 data/etalon_imgs/
 results.csv
 selected_reference.json
-defect_detection_model.pkl
 reference_model.pkl
 test_model.pkl
 temp_*.jpg
