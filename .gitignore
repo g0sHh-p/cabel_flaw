@@ -1,0 +1,45 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual envs
+.venv/
+.env/
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# Testing/linters/cache
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# App data and artifacts
+data/etln_proc/
+data/etalon_imgs/
+results.csv
+selected_reference.json
+defect_detection_model.pkl
+reference_model.pkl
+test_model.pkl
+temp_*.jpg
+
+# Logs
+logs/
+*.log
+
+# Cursor/agent
+.cursor/
+.agent-tools/
+
+# Keep if needed
+images/
