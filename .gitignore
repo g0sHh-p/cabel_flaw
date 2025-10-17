@@ -26,9 +26,6 @@ Thumbs.db
 # App data and artifacts
 data/etln_proc
 data/etalon_imgs
-data/test/
-results.csv
-selected_reference.json
 
 # Cursor/agent
 .cursor/

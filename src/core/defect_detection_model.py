@@ -53,7 +53,7 @@ class DefectDetectionModel:
         
         # Пороги для детекции дефектов (согласно ТЗ)
         self.defect_thresholds = {
-            'diameter_deviation': 0.25,      # 15% отклонение диаметра
+            'diameter_deviation': 0.30,      # 15% отклонение диаметра
             'area_deviation': 0.40,          # 20% отклонение площади
             'wire_count_deviation': 0.20,    # 30% отклонение количества проволок
             'texture_anomaly': 0.20,         # 25% отклонение текстуры
@@ -613,7 +613,7 @@ class DefectDetectionModel:
             'wire_defects': 0.25,            # Очень высокий приоритет (проволоки критичны)
             'texture_defects': 0.25,         # Максимальный приоритет (текстура и свивка критичны)
             'contour_defects': 0.10,         # Минимальный приоритет (контур менее важен)
-            'brightness_defects': 0.10       # Низкий приоритет (яркость менее критична)
+            'brightness_defects': 0.05       # Низкий приоритет (яркость менее критична)
         }
         
         for defect_type, weight in weights.items():
