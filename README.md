@@ -38,6 +38,7 @@ python src/interface/console.py analyze --input data/etln_proc --output results.
 ├─ data/
 │  ├─ etalon_imgs/      # исходные изображения эталонов
 │  └─ etln_proc/        # предобработанные изображения (генерируется)
+│  └─ test/             # изображения для теста
 ├─ src/
 │  ├─ core/
 │  │  ├─ preproc.py                 # предобработка
@@ -52,4 +53,5 @@ python src/interface/console.py analyze --input data/etln_proc --output results.
 ├─ .gitignore
 ├─ requirements.txt
 └─ README.md
+└─ results.csv
 ```
