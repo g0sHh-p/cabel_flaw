@@ -16,7 +16,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from core import (
     load_defect_detection_model,
-    DefectDetectionModel
 )
 
 
@@ -38,7 +37,6 @@ def batch_analyze_images(model, input_folder, output_file="results.csv"):
     # Собираем все изображения
     for ext in ['*.jpg', '*.jpeg', '*.png', '*.bmp']:
         image_files.extend(Path(input_folder).glob(ext))
-        image_files.extend(Path(input_folder).glob(ext.upper()))
     
     if not image_files:
         print(f"В папке {input_folder} не найдено изображений")

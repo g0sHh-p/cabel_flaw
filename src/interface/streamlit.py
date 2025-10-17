@@ -18,7 +18,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from core import (
     create_defect_detection_model,
     load_defect_detection_model,
-    
 )
 
 # Настройка страницы

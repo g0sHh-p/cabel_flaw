@@ -28,16 +28,17 @@ from .texture_analys import (
     analyze_cable_texture,
     compare_cable_textures
 )
-from .reference_model import (
-    ReferenceModel,
-    create_reference_model,
-    load_reference_model
-)
 from .defect_detection_model import (
     DefectDetectionModel,
     create_defect_detection_model,
-    load_defect_detection_model
+    load_defect_detection_model,
+    # Функции совместимости с reference_model.py
+    create_reference_model,
+    load_reference_model
 )
+
+# Для обратной совместимости
+ReferenceModel = DefectDetectionModel
 
 __all__ = [
     # Предварительная обработка
